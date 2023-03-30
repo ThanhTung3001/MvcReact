@@ -1,27 +1,120 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhatdhm\\source\\repos\\AspnetMvc\\Applications\\Applications.csproj": {}
+    "/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/Applications.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhatdhm\\source\\repos\\AspnetMvc\\Applications\\Applications.csproj": {
+    "/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/Applications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhatdhm\\source\\repos\\AspnetMvc\\Applications\\Applications.csproj",
+        "projectUniqueName": "/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/Applications.csproj",
         "projectName": "Applications",
-        "projectPath": "C:\\Users\\nhatdhm\\source\\repos\\AspnetMvc\\Applications\\Applications.csproj",
-        "packagesPath": "C:\\Users\\nhatdhm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhatdhm\\source\\repos\\AspnetMvc\\Applications\\obj\\",
+        "projectPath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/Applications.csproj",
+        "packagesPath": "/Users/tunglvt/.nuget/packages/",
+        "outputPath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nhatdhm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tunglvt/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj": {
+                "projectPath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR.Contracts": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj",
+        "packagesPath": "/Users/tunglvt/.nuget/packages/",
+        "outputPath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tunglvt/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +132,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }

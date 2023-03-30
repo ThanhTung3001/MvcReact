@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "eX1cKR1QgoQAnK9xWFfm1s1tObP/Ve1UoOvx4T9PRY6BsqGpq5nAHf1BE54VIrjL5irpuBVFgm99cauLbT7kCg==",
+  "dgSpecHash": "sRhzd63a+WK7nO54PPmwihXqwo6ae7sLkq4wH9fbkSHbnKMRs4BvvWShAePGmEGFdaanTHFQt/imjIMPnEt0bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nhatdhm\\source\\repos\\AspnetMvc\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/tunglvt/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.0/microsoft.aspnetcore.cryptography.internal.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.0/microsoft.aspnetcore.cryptography.keyderivation.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.identity.core/7.0.0/microsoft.extensions.identity.core.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.identity.stores/7.0.0/microsoft.extensions.identity.stores.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/tunglvt/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

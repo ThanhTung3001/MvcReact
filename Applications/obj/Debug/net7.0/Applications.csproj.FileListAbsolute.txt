@@ -1,0 +1,15 @@
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/bin/Debug/net7.0/Applications.deps.json
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/bin/Debug/net7.0/Applications.dll
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/bin/Debug/net7.0/Applications.pdb
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/bin/Debug/net7.0/Domain.dll
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/bin/Debug/net7.0/Domain.pdb
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.csproj.AssemblyReference.cache
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.AssemblyInfoInputs.cache
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.AssemblyInfo.cs
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.csproj.CoreCompileInputs.cache
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.csproj.CopyComplete
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.dll
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/refint/Applications.dll
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/Applications.pdb
+/Users/tunglvt/Desktop/dotnet/MvcReact/Applications/obj/Debug/net7.0/ref/Applications.dll
