@@ -60,7 +60,7 @@ public class AppDbContextInitializer
         if (_roleManager.Roles.All(e => e.Name != adminRole.Name)) {
             await _roleManager.CreateAsync(adminRole);
         }
-        var administrator = new ApplicationUser { UserName = "Administrator@localhost", Email = "Administrator@localhost",FullName="Admin" };
+        var administrator = new ApplicationUser { UserName = "Administrator@localhost", Email = "Administrator@localhost",FullName="Admin",Avatar=$"https://ui-avatars.com/api/?name=Administrator@localhost" };
         if (_userManager.Users.All(e => e.UserName != administrator.UserName)) { // create user name as role if not exist
             await _userManager.CreateAsync(administrator);
             if (!string.IsNullOrEmpty(administrator.UserName)) {

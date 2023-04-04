@@ -22,7 +22,7 @@ public class ApplicationUser:IdentityUser
     
     public long ICCID { get; set; }
     
-    public string Avatar { get; set; }
+    public string? Avatar { get; set; }
     public ApplicationUser()
     {
     }
