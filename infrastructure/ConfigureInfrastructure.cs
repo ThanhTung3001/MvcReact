@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 using Applications.Common.Interface;
 using Domain.Entities.Users;
 using infrastructure.Enum;
+using infrastructure.Identity;
+using infrastructure.Interceptors;
 using infrastructure.Persistence;
+using infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +24,8 @@ namespace infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
+            services.AddTransient<IDateTime, DateTimeServices>();
+            services.AddScoped<AuditableEntitySaveChangesInterceptor>();
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnectionString"), // Thêm cấu hình cho database
@@ -28,7 +33,9 @@ namespace infrastructure
         
             });
             services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());// Injection IAppDbContext and AppDbContext
+         
             services.AddScoped<AppDbContextInitializer>();
+            
             services
                 .AddDefaultIdentity<ApplicationUser>()  //Add Config Identity User,Role and DbContext
                 .AddRoles<IdentityRole>()
@@ -52,6 +59,10 @@ namespace infrastructure
                     };
                 });
             services.AddTransient<IApplicationDbContext, ApplicationDbContext>();
+
+            services.AddTransient<IIdentityService, IdentityService>();
+
+            services.AddTransient<IJwtToken, IdentityJwt>();
 
             services.AddAuthorization(options => options.AddPolicy("CanPurge", policy => policy.RequireRole(Role.Administration.ToString())));
 

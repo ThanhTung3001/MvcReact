@@ -193,6 +193,7 @@
       "Microsoft.Extensions.Primitives/7.0.0": {},
       "Domain/1.0.0": {
         "dependencies": {
+          "MediatR.Contracts": "2.0.1",
           "Microsoft.Extensions.Identity.Stores": "7.0.0"
         },
         "runtime": {

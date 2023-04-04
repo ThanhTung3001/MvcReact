@@ -10,15 +10,19 @@ public class ApplicationUser:IdentityUser
 {
     [MaxLength(50)]
     [Required(ErrorMessage = "FullName is required")]
-    public string FullName { get; private set; }
-    public DateTime Birthday{ get; private set; }
+    public string FullName { get;  set; }
+    public DateTime Birthday{ get;  set; }
     [MaxLength(100)]
-    public string Address { get; private set; } = "Unknown";
+    public string Address { get;  set; } = "Unknown";
     [JsonIgnore]
     public virtual List<Register> Register { get; private set; }
-    public int? HospitalId { get; private set; }
+    public int? HospitalId { get;  set; }
     [ForeignKey("HospitalId")]
-    public virtual Hospital? Hospital { get; private set; }
+    public virtual Hospital? Hospital { get;  set; }
+    
+    public long ICCID { get; set; }
+    
+    public string Avatar { get; set; }
     public ApplicationUser()
     {
     }
@@ -28,6 +32,7 @@ public class ApplicationUser:IdentityUser
         EmailConfirmed = true;
         Register = new List<Register>();
     }
+    
     public void Update(string userName,string fullName, string email,DateTime birthday, int? hospitalId, string address)
     {
         FullName = fullName.Trim();

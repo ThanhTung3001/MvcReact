@@ -52,6 +52,10 @@ namespace infrastructure.Persistence.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("BloodGroups");
@@ -305,6 +309,10 @@ namespace infrastructure.Persistence.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("Avatar")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("Birthday")
                         .HasColumnType("datetime2");
 
@@ -326,6 +334,9 @@ namespace infrastructure.Persistence.Migrations
 
                     b.Property<int?>("HospitalId")
                         .HasColumnType("int");
+
+                    b.Property<long>("ICCID")
+                        .HasColumnType("bigint");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");

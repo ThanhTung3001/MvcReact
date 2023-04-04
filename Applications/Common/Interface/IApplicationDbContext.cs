@@ -11,9 +11,11 @@ public interface IApplicationDbContext
    // public DbSet<ApplicationUser> Users { get; set; }
      DbSet<Hospital> Hospitals { get;  }
      DbSet<Image> Images { get;}
-     DbSet<BloodGroup> BloodGroups { get;  }
+     DbSet<Domain.Entities.BloodRegister.BloodGroup> BloodGroups { get;  }
      DbSet<Register> Registers { get;  }
      DbSet<Blog> Blogs { get; }
      DbSet<Event> Events { get; }
      DbSet<Charity> Charities { get; }
+     DbSet<ApplicationUser> Users { get;  }
+     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

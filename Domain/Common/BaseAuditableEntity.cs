@@ -7,8 +7,7 @@ public class BaseAuditableEntity
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id { get; private set; }
-    
+    public int Id { get;  set; }
     public DateTime Created { get; set; }
 
     public string? CreatedBy { get; set; }

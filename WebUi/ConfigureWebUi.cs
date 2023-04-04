@@ -19,6 +19,7 @@ namespace WebUi
             });
             
             services.AddControllers();
+            services.AddLogging();
             return services;
         }
     }

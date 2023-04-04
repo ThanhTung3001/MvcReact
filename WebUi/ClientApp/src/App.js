@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AppRoutes from './AppRoutes';
-import { Layout } from './components/Layout';
 import './custom.css';
+import { Header } from './components/layout/header';
 
-export default class App extends Component {
-  static displayName = App.name;
+const App = ()=> {
 
-  render() {
     return (
-      <Layout>
-        <Routes>
-          {AppRoutes.map((route, index) => {
-            const { element, ...rest } = route;
-            return <Route key={index} {...rest} element={element} />;
-          })}
-        </Routes>
-      </Layout>
+      <>
+      <Header/>
+       <Routes>
+      {AppRoutes.map((route, index) => {
+        const { element, ...rest } = route;
+        return <Route key={index} {...rest} element={element} />;
+      })}
+     </Routes>
+      </>
+     
     );
-  }
+  
 }
+
+export default App;

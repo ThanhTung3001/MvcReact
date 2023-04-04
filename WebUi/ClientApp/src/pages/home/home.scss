@@ -1,0 +1,40 @@
+@import '../../scss/variable';
+
+#home{
+   // margin-top: 120px;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,$bgColor, white);
+}
+.btn {
+    border-radius: 16px 0px 16px 16px;
+    padding:8px 16px;
+    max-width: fit-content;
+    transition: all 0.5s ease-in-out;
+}
+.btn-primary:hover{
+    background-color: $secondaryColor !important;
+    color: white !important;
+}
+.btn:hover{
+    transform: scale(1.05) !important;
+}
+.saveblood-background{
+    margin-top: 32px;
+    height: 80%;
+    width: 80%;
+  //  border: 1px solid black;
+    border-radius: 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/save-blood-img.png');
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.saveblood-background:hover{
+    transform: scale(1.05);
+
+}
+#hepping-history{
+    height: 1000px;
+}

@@ -16,6 +16,7 @@ builder.Services.AddConfigureWebUi();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddApplicationServices();
+
 builder.Services.AddConnections();
 
 builder.Services.AddControllers();
@@ -39,7 +40,7 @@ else
     {
         var initialiser = scope.ServiceProvider.GetRequiredService<AppDbContextInitializer>();
         await initialiser.Initializer();
-      //  await initialiser.Send();
+        await initialiser.Send();
     }
 }
 
@@ -49,7 +50,7 @@ app.UseRouting();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api BloodBank V1");
 });
 
 
