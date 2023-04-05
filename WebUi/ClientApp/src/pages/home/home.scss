@@ -36,5 +36,80 @@
 
 }
 #hepping-history{
-    height: 1000px;
+    height: 200px;
+    border-top-right-radius: 100px;
+    background-image: linear-gradient(to right,#a25950, #d62b19);
+}
+#donate-processing{
+    height: 100vh;
+    width: 100%;
+}
+.message p{
+    letter-spacing: 0.6px;
+
+}
+.processing-content p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+.processing-content{
+   height: 150px;
+}
+#our-camping{
+    height: 100vh;
+    width: 100%;
+}
+.camping-header img{
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+
+}
+.camping-header img:hover{
+    transform: scale(1.1);
+
+
+}
+.camping-card{
+    position: relative;
+    height: 350px;
+}
+.camping-body {
+   // position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 160px;
+    bottom: 30px;
+}
+.card-image{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.card-image:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+  .react-multi-carousel-item{
+    margin-right: 16px;
+  }
+.timer{
+    margin: 0px 8px;
+}
+#contact{
+    height: 100vh;
+}
+#contact{
+    background-image: linear-gradient(to right,$bgColor, white);
+    border-top-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+.arrow-icon {
+    border-radius:48px 0 48px 48px;
+    padding: 8px;
 }

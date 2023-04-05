@@ -1,6 +1,12 @@
 import React from 'react'
 import './home.scss';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import CustomButton from '../../components/button/CustomButton';
+import { Slogan } from './Slogan';
+import { DonateProcessing } from './DonateProcessing';
+import { OurCamping } from './OurCamping';
+import { Contact } from './Contact';
+
 export const Home = () => {
   return (
     <>
@@ -18,9 +24,10 @@ export const Home = () => {
            </div>
         </div>
     </div>
-    <div id="hepping-history">
-      
-    </div>
+        <Slogan/>
+        <DonateProcessing/>
+        <OurCamping/>
+        <Contact/>
     </>
   )
 }

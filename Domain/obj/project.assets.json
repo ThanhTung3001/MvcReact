@@ -549,26 +549,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nhatdhm\\.nuget\\packages\\": {}
+    "/Users/tunglvt/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nhatdhm\\Desktop\\reactjs\\MvcReact\\Domain\\Domain.csproj",
+      "projectUniqueName": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\nhatdhm\\Desktop\\reactjs\\MvcReact\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\nhatdhm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nhatdhm\\Desktop\\reactjs\\MvcReact\\Domain\\obj\\",
+      "projectPath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/Domain.csproj",
+      "packagesPath": "/Users/tunglvt/.nuget/packages/",
+      "outputPath": "/Users/tunglvt/Desktop/dotnet/MvcReact/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nhatdhm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/tunglvt/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -612,7 +610,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

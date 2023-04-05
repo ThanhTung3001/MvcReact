@@ -29,7 +29,8 @@ ul{
     align-items: center;
 }
 .top-header{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   transition: all 0.5s ease-in-out;
 }
 .item-active::after {
     width: 80%;
@@ -37,7 +38,9 @@ ul{
   }
 
   .scroll-header{
-    width: 100% !important;
+    width: 80% !important;
     margin: 0px !important;
-    top: 0;
+    background-color: white !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+    top: 30px;
   }

@@ -37,15 +37,15 @@ export const Header = () => {
         };
     },[]);
     const handleScroll = () => {
-        if (window.scrollY > 0) {
+        if (window.scrollY >30) {
             setHeaderScroll(true);
         }else{
             setHeaderScroll(false);
         }
       };
   return (
-        <header className={`flex justify-center fixed top-8 w-full h-[60px] ${headerScroll==true?"scroll-header":""}`}>
-            <div className={`container top-header flex bg-white rounded-md w-[80%] z-1 items-center ${headerScroll==true?"scroll-header":""}`}>
+        <header className={`flex justify-center fixed top-8 w-full h-[60px] z-50`}>
+            <div className={`container top-header flex rounded-md w-full z-1 items-center ${headerScroll===true?"scroll-header":""}`}>
                     <div className="logo font-bold text-xl pl-4 cursor-pointer w-1/3">
                         BloodDeft
                     </div>
@@ -54,7 +54,7 @@ export const Header = () => {
                                
                                 {
                                     (arrayMenu).map((e,index)=>{
-                                      return  <li className={`item ${index==select?'item-active':''}`} onClick={()=>{
+                                      return  <li className={`item ${index===select?'item-active':''}`} onClick={()=>{
                                          setSelected(index);
                                       }}><Link to={e.path}>{e.name}</Link></li>
                                     })
