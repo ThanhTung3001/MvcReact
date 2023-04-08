@@ -6,6 +6,7 @@ import { Slogan } from './Slogan';
 import { DonateProcessing } from './DonateProcessing';
 import { OurCamping } from './OurCamping';
 import { Contact } from './Contact';
+import { LastNews } from './LastNews';
 
 export const Home = () => {
   return (
@@ -28,6 +29,9 @@ export const Home = () => {
         <DonateProcessing/>
         <OurCamping/>
         <Contact/>
+        <div className="h-[100vh] flex flex-col justify-center items-center">
+        <LastNews/>
+        </div>
     </>
   )
 }

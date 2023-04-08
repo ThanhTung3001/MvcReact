@@ -4,6 +4,8 @@ import AppRoutes from './AppRoutes';
 import './custom.css';
 import { Header } from './components/layout/header';
 import { motion, useScroll } from "framer-motion"
+import { Footter } from './components/layout/footer';
+
 
 
 const App = ()=> {
@@ -20,7 +22,9 @@ const App = ()=> {
         const { element, ...rest } = route;
         return <Route key={index} {...rest} element={element} />;
       })}
-     </Routes>
+      
+      </Routes>
+        <Footter/>
       </>
      
     );
