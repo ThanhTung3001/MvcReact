@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
 using System.Net.Mime;
 using Domain.Common;
 using Domain.Entities.Media;
@@ -29,6 +30,10 @@ public class Register:BaseAuditableEntity
     public virtual Hospital Hospital { get; private set; }
     public int Ml { get; private set; }
 
+    public void UpdateRegisterStatus(Status _status)
+    {
+        Status = _status;
+    }
     public Register(string note, Status status, int bloodId, string userId, DateTime timeSign, int qR, int hospitalId, int ml)
     {
         //Add();

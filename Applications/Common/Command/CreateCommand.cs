@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Applications.Common.Interface;
 
 namespace Applications.Common.Command
 {
@@ -14,6 +15,16 @@ namespace Applications.Common.Command
         public CreateCommand(TEntity entity)
         {
             Entity = entity ?? throw new ArgumentNullException(nameof(entity));
+        }
+    }
+
+    public class BaseCreateCommand
+    {
+        public readonly IApplicationDbContext _context;
+
+        public BaseCreateCommand(IApplicationDbContext context)
+        {
+            _context = context;
         }
     }
 }

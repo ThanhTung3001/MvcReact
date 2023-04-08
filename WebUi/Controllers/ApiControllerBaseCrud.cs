@@ -4,9 +4,9 @@ namespace WebUi.Controllers
 {
     public class ApiControllerBaseCrud : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        // public IActionResult Index()
+        // {
+        //     return View();
+        // }
     }
 }

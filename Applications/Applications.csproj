@@ -8,7 +8,13 @@
 
   <ItemGroup>
     <Folder Include="BloodGroup\EventHandlers" />
+    <Folder Include="Post\Event\Commands" />
+    <Folder Include="Post\Event\Queries" />
     <Folder Include="Users\EventHandlers" />
+    <Folder Include="Hospitals\Commands\" />
+    <Folder Include="Hospitals\Commands\CreateHospital\" />
+    <Folder Include="Hospitals\Commands\UpdateHospital\" />
+    <Folder Include="Hospitals\Commands\DeleteHospital\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,4 +33,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Hospitals\Commands\" />
+    <None Remove="Hospitals\Commands\CreateHospital\" />
+    <None Remove="Hospitals\Commands\UpdateHospital\" />
+    <None Remove="Hospitals\Commands\DeleteHospital\" />
+  </ItemGroup>
 </Project>

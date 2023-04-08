@@ -1,4 +1,5 @@
 using Applications.Common.Mappings;
+using Applications.Hospitals.Queries.GetHospitalWithPagination;
 using Domain.Entities.Users;
 
 namespace Applications.Users.Queries.GetUserWithPagination;
@@ -20,14 +21,3 @@ public class UserQueriesDto:IMapFrom<ApplicationUser>
     public string PhoneNumber { get; set; }
 }
 
-public class HospitalDto : IMapFrom<Hospital>
-{
-   
-    public string Name { get; private set; }
-    
-    public string Address { get; private set; }
-   
-    public string Lat { get; private set; }
-   
-    public string Long { get; private set; }
-} 

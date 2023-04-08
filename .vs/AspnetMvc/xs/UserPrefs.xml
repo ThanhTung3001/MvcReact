@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{DE9A4EDF-8A4B-4369-A5F0-DBCBE700F78C}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WebUi PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Applications/Hospitals/Commands/CreateHospital/CreateHospitalCommands.cs">
+    <Files>
+      <File FileName="Applications/Hospitals/Queries/GetHospitalWithPagination/HospitalDto.cs" Line="19" Column="47" />
+      <File FileName="Applications/Hospitals/Commands/CreateHospital/CreateHospitalCommands.cs" Line="33" Column="26" />
+      <File FileName="Applications/Hospitals/Commands/UpdateHospital/UpdateHospitalCommands.cs" Line="12" Column="1" />
+      <File FileName="Applications/Hospitals/Commands/DeleteHospital/DeleteHospitalCommands.cs" Line="1" Column="1" />
+      <File FileName="Applications/Hospitals/Queries/GetHospitalWithPagination/QueriesHospitalWithPaginations.cs" Line="12" Column="1" />
+      <File FileName="Applications/BloodGroup/Commands/CreateBloodGroup/CreateBloodGroupCommand.cs" Line="9" Column="2" />
+      <File FileName="Domain/Entities/Users/Hospital.cs" Line="9" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AspnetMvc" expanded="True">
+            <Node name="Applications" expanded="True">
+              <Node name="BloodGroup" expanded="True">
+                <Node name="Commands" expanded="True">
+                  <Node name="CreateBloodGroup" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Hospitals" expanded="True">
+                <Node name="Commands" expanded="True">
+                  <Node name="CreateHospital" expanded="True">
+                    <Node name="CreateHospitalCommands.cs" selected="True" />
+                  </Node>
+                  <Node name="UpdateHospital" expanded="True" />
+                </Node>
+                <Node name="Queries" expanded="True">
+                  <Node name="GetHospitalWithPagination" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Domain" expanded="True">
+              <Node name="Entities" expanded="True">
+                <Node name="BloodRegister" expanded="True" />
+                <Node name="Media" expanded="True" />
+                <Node name="Posts" expanded="True" />
+                <Node name="Users" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="infrastructure" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

@@ -9,7 +9,7 @@ namespace Applications.BloodGroup.Queries.GetBloodGroupWithPagination;
 
 public class GetBloodGroupWithPaginationQueries:IRequest<PaginatedList<BloodGroupDto>>
 {
-    public string ? Keyword { get; set; }
+    public string? Keyword { get; init; } = "";
 
     public int PageNumber { get; init; } = 1;
 
