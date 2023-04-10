@@ -42,7 +42,7 @@ export const LastNews = () => {
                             (new Array(10).fill().map(e => (<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden m-8">
                                 <div class="md:flex flex-col">
                                     <div class="md:flex-shrink-0">
-                                        <img class="h-60 w-full object-cover card-image" src="https://picsum.photos/200/300" alt="Card image" />
+                                        <img class="h-60 w-full object-cover card-image" src={`https://picsum.photos/200/${Math.floor(Math.random() * 10 + 1) * 100}`} alt="Card image" />
                                     </div>
                                     <div class="p-4">
                                         <div className="date flex items-center mb-3">

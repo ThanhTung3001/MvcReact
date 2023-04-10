@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './home.scss';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import CustomButton from '../../components/button/CustomButton';
@@ -7,8 +7,29 @@ import { DonateProcessing } from './DonateProcessing';
 import { OurCamping } from './OurCamping';
 import { Contact } from './Contact';
 import { LastNews } from './LastNews';
+import { Button } from 'antd';
 
 export const Home = () => {
+  const [connected, setConnected] = useState(false);
+  useEffect(() => {
+    if (typeof window.ethereum !== 'undefined') {
+      window.ethereum.enable().then(accounts => {
+        setConnected(true);
+        alert('You are now connected to Metamask!');
+      });
+    }
+  }, []);
+  const handlerConnectWallet = ()=>{
+    if (typeof window.ethereum !== 'undefined') {
+      window.ethereum.on('accountsChanged', accounts => {
+        console.log('Selected account:', accounts[0]);
+      });
+      
+      window.ethereum.on('networkChanged', networkId => {
+        console.log('Network ID:', networkId);
+      });
+    }
+  }
   return (
     <>
     <div id="home">
@@ -16,10 +37,12 @@ export const Home = () => {
            <div className="flex flex-wrap h-full">
                 <div className="w-full  h-full flex flex-col justify-center items-center">
                         <h2 className='text-4xl sm:text-6xl font-bold text-gray-800 text-center md:text-left'>Donate blood, save life !</h2>
-                        <p className="text-sm sm:text-md w-full sm:w-[80%] mt-4 text-gray-500 text-center md:text-left">
+                        <p className="text-sm sm:text-md w-full sm:w-[80%] mt-4 text-gray-500 text-center">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium magni, laborum, ducimus, saepe officiis at odio possimus quibusdam deserunt perferendis molestiae id ab aliquam reprehenderit quas earum animi consectetur.
                         </p>
-                        <button className='hover:bg-red-400 bg-white flex justify-center items-center btn btn-primary border-white text-black mt-6 '>Donate Now <div className="btn btn-primary ml-2 p-2 bg-green-500 border-green-500"><AiOutlineArrowRight/></div></button>
+                        {/* <Button size='large' type="primary" className='button-primary mt-2 sm:mt-6'>Donate now</Button> */}
+                        <button class="button-36 mt-6" role="button" onClick={handlerConnectWallet}>Donate Now</button>
+
                 </div>
                
            </div>

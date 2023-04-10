@@ -11,7 +11,7 @@ export const CustomCard = ({number,title,body,className}) => {
                     </div>
             </div>
             <div className="processing-content mt-4">
-                    <h3 className='text-2xl font-bold'>{title}</h3>
+                    <h3 className='text-2xl font-bold text-center sm:text-left'>{title}</h3>
                     <p className='text-md text-gray-600 mt-2'>{body}</p>
             </div>
     </div>

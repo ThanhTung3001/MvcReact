@@ -5,8 +5,8 @@ export const DonateProcessing = () => {
     return (
         <div id="donate-processing" >
             <div className="container flex flex-col justify-center h-full">
-                <div className="message w-1/2">
-                        <h3 className='text-black text-4xl'>Donation process</h3>
+                <div className="message w-full sm:w-1/2">
+                        <h3 className='text-black text-4xl text-center sm:text-left md:text-left lg:text-left'>Donation process</h3>
                         <p className="text-gray-500 text-sm mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellendus quasi, quos totam quia perspiciatis nisi suscipit, ab eaque delectus aliquid, nostrum impedit deleniti quo vel ullam? Dolore, nobis quas.</p>
                 </div>
                 <div className="step-processing flex flex-wrap mt-8">

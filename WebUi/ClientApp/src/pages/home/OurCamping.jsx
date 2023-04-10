@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineArrowRight, AiFillCalendar } from "react-icons/ai";
 import { BsMapFill } from "react-icons/bs";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import axios from 'axios';
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -18,18 +19,21 @@ const responsive = {
         items: 2
     },
     mobile: {
-        breakpoint: { max: 464, min: 0 },
+        breakpoint: { max: 600, min: 0 },
         items: 1
     }
 };
 export const OurCamping = () => {
+    const [blog,setBlog] = useState({});
+ 
+
     return (
         <div id='our-camping'>
             <div className="container ">
                 <div className="camping-header flex justify-between items-center">
-                    <h3 className='text-4xl '> Our campaings</h3>
+                    <h3 className='text-4xl text-center sm:text-left w-full '> Our campaings</h3>
                     <div className="see-all">
-                        <p className="text-xl flex items-center hover:text-green-500">See all <AiOutlineArrowRight className='ml-2' /></p>
+                        <p className=" hidden text-xl sm:flex items-center hover:text-green-500 sm:w-[100px]">See all <AiOutlineArrowRight className='ml-2' /></p>
                     </div>
                 </div>
                 <div className="camping-description w-full sm:w-1/2 mt-4">
@@ -39,10 +43,10 @@ export const OurCamping = () => {
                 <div className="camping-caroul">
                     <Carousel autoPlay  infinite responsive={responsive} className=''>
                         {
-                            (new Array(10).fill().map(e => (<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden m-8">
+                            (new Array(10).fill().map((e,index) => (<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden m-8">
                                 <div class="md:flex flex-col">
                                     <div class="md:flex-shrink-0">
-                                        <img class="h-60 w-full object-cover card-image" src="https://picsum.photos/200/300" alt="Card image" />
+                                        <img class="h-60 w-full object-cover card-image" src={`https://picsum.photos/200/${Math.floor(Math.random() * 10 + 1) * 100}`} alt="Card image" />
                                     </div>
                                     <div class="p-4">
                                         <div className="date flex items-center mb-3">
